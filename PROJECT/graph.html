@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELECTRICITY DATA VISUALIZATION (DISPLAY-GRAPHING)</title>
+  <link rel="stylesheet" href="graph.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header id="header">
+    <h1>ELECTRICITY DATA VISUALIZATION <br> (GRAPHING-DISPLAY)</h1>
+  </header>
+  
+  <section class="container" id="graphs">
+    <section class="inventory-section">
+      <h2>CAPACITOR CHARGE-OVERVIEW:</h2>
+      <canvas id="inventoryChart" width="500" height="200"></canvas>
+    </section>
+
+    <section>
+      <section class="divergentBarSection">
+        <h2>REMAINING DATA-OVERVIEW:</h2>
+        <canvas id="divergentBarChart" width="500" height="200"></canvas>
+      </section>
+  
+      <section class="pieChartSection">
+        <h2>VOLTAGE DATA-OVERVIEW:</h2>
+        <canvas id="pieChart" width="500" height="200"></canvas>
+      </section>
+    </section>
+  </section>
+
+  <video autoplay muted loop>
+    <source src="bg.mp4" type="video/mp4">
+  </video>
+
+  <script src="graph.js"></script>
+</body>
+</html>
